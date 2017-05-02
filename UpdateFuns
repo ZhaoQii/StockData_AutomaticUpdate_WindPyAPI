@@ -1,4 +1,8 @@
+# coding: utf-8
 
+# Integrated by Qi, on 05-02-2017.
+# The functions below are for creating several files which contain important data while doing quantitative research in stock market or 
+# constructing algorithm trading strategies. 
 
 
 import numpy as np
@@ -8,10 +12,15 @@ import datetime as dt
 import sys
 import os
 
+
 w.start()
 
+#----------------------------------
+# Part I: Creating the function for updating the 'base' file
+# Here, the 'base' file includes the fields like name, code, company's name, ipo date and so on basic information of all the stocks 
+# (listing and delisted stocks)
+#----------------------------------
 
-# function for updating the 'base' file
 def UpdateBase(today, more_fields = None, path = str()):    # 'fields' contains basic fields already, if more fields wanted, 
         # put them in 'more_fields' with str type 'xxx, yyyy, zzzz', if not current path required, add complete str path in ‘path'
     fields = 'sec_name,isin_code,comp_name,comp_name_eng,ipo_date,delist_date'    
