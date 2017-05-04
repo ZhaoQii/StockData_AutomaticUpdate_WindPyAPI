@@ -6,7 +6,7 @@ Created on Sat Apr 15 09:48:48 2017
 """
 import numpy as np
 import pandas as pd
-from WindPy import w
+from WindPy import w        # import Wind's Python API
 import datetime as dt
 import sys
 import os
